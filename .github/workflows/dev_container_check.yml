@@ -3,9 +3,6 @@ on:
   push:
     paths:
       - ".devcontainer/**"
-  pull_request:
-    paths:
-      - ".devcontainer/**"
 jobs:
   run_dev_container:
     runs-on: ubuntu-latest
