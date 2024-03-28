@@ -31,5 +31,5 @@
   },
   "image": "mcr.microsoft.com/devcontainers/python:3.11",
   "name": "Python 3.9",
-  "postCreateCommand": "chmod +x 9.devcontainer/post_create.sh && ./.devcontainer/post_create.sh"
+  "postCreateCommand": "chmod +x .devcontainer/post_create.sh && ./.devcontainer/post_create.sh"
 }
