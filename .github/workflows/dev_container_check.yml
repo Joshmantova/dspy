@@ -1,0 +1,17 @@
+name: Dev Container Check
+on:
+  push:
+    paths:
+      - ".devcontainer/**"
+jobs:
+  run_dev_container:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3 # Check out the repository so your job can access it
+
+      - name: Pre-build image and run make ci-build in dev container
+        uses: devcontainers/ci@v0.3
+        with:
+          runCmd: echo "Build complete"
+          push: never
